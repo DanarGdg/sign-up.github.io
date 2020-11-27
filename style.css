@@ -1,0 +1,168 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-image:url('/Kodinggading/intro-component-with-signup-form-master/images/bg-intro-desktop.png');
+  background-color:hsl(0, 100%, 74%) ;
+  height:100vh;
+}
+
+.bagian-kiri{
+  float:left;
+  width:50%;
+  height:100%;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bagian-kiri h1{
+  font-weight:700;
+  font-size:44px;
+}
+
+.wrap-tulisan-kecil-kanan{
+  font-size:15px;
+  position: relative;
+  left:28px;
+  margin:30px 0 0 0;
+}
+
+.bagian-kiri p{
+  margin:5px 0 0 0;
+}
+
+/*==KANAN==================KANAN=============================*/
+/*===============KANAN=================KANAN=================*/
+/*===KANAN=============KANAN=============KANAN==========KANAN*/
+
+
+.bagian-kanan{
+  float: right;
+  width:50%;
+  height:100%;
+  color:white;
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+}
+
+.tulisan-ungu{
+  background-color: hsl(248, 32%, 49%) ;
+  color:hsl(246, 25%, 77%);
+  border-radius:10px;
+  padding:15px 0 15px 120px ;
+  margin: 0 0 30px 0;
+  width:75%;
+  box-shadow:0 7px 1px 0px rgb(128, 128, 128, 0.5);
+  font-size:13px;
+}
+
+.tulisan-ungu span{
+  font-weight:700;
+  color:white;
+}
+
+.wrap-input{
+  border-radius:5px;
+  background-color:white;
+  width:75%;
+  height:auto;
+  padding:30px;
+  box-shadow:0 7px 1px 0px rgb(128, 128, 128, 0.5);
+}
+
+.form-control input{
+  width:100%;
+  outline-color: hsl(249, 10%, 26%);
+  padding:15px;
+  margin:-10px 0 0 0;
+  border-radius:5px;
+  border-color:rgb(185, 182, 211, 0.10);
+}
+
+input[type="text"], [type="email"], [type="password"]{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color:hsl(249, 10%, 26%) ;
+  font-size:12px;
+}
+
+#submit{
+  background-color: hsl(154, 59%, 51%);
+  width:100%;
+  outline: none;
+  padding:15px;
+  margin-top:15px;
+  border-radius:5px;
+  border:none;
+  cursor: pointer;
+  color:white;
+}
+
+.wrap-input p{
+  color: hsl(246, 25%, 77%) ;
+  font-size:10px;
+  margin:15px 10% 0 15%;
+}
+
+.wrap-input span{
+  color:hsl(0, 100%, 74%);
+}
+
+#error-img{
+  color:red;
+  background-image:url('/Kodinggading/intro-component-with-signup-form-master/images/icon-error.svg');
+  width:25px;
+  height:25px;
+  position:absolute;
+  border-radius:50%;
+  transform: translate(-40px ,-48px )
+}
+
+img{
+  position:relative;
+  bottom:50px;
+  left:380px;
+  visibility: hidden;
+}
+
+small{
+  color:red;
+  position:absolute;
+  right: 190px;
+  transform: translate( 0,-10px);
+  font-size: 11px;
+  visibility: hidden;
+}
+
+
+.form-control.error  .small-error {
+  border-color: red;
+  visibility: visible;
+  margin:15px 0 0 0;
+}
+
+.form-control.error  .gambar-error{
+  border-color: red;
+  visibility: visible;
+  margin:15px 0 0 0;
+}
+
+.form-control.error  input{
+  border-color: red;
+  visibility: visible;
+  margin:15px 0 0 0;
+}
+
+.form-control.succes input{
+  border-color: green;
+  visibility: visible;
+  margin:-14px 0 0 0;
+}
